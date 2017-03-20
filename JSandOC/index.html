@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div style="margin-top: 20px">
+<h2>JS与OC交互</h2>
+<input type="button" value="OC方法一" onclick="JSandOC.method()">
+</div>
+<div>
+<input type="button" value="OC方法二传值" onclick="post()">
+</div>
+
+<script>
+
+
+
+var post = function()
+{
+    var callInfo = JSON.stringify({"study": "good good study, day day up"});
+        JSandOC.postMethod(callInfo);
+}
+
+
+</script>
+</body>
+</html>
